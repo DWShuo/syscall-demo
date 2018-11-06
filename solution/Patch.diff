@@ -7,7 +7,7 @@ diff -rcNP -x 'signing_key.*' -x x509.genkey -x fixdep -x objtool -x inat-tables
   332	common	statx			__x64_sys_statx
   333	common	io_pgetevents		__x64_sys_io_pgetevents
   334	common	rseq			__x64_sys_rseq
-+ 335	common	read_lines_array	__x64_sys_read_lines_array
++ 335	common	read_lines		__x64_sys_read_lines
   
   #
   # x32-specific system call numbers start at 512 to avoid cache impact
