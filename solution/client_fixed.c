@@ -17,7 +17,7 @@ void do_client(int sockfd,FILE* logfd){
 	ssize_t nbytes = 0;
 	sleep(5); //Why does this line create problems? Can we get around it?
 
-	while(syscall(SYS_read_lines_array,sockfd,buffer,256)>0){
+	while(syscall(SYS_read_lines,sockfd,buffer,256)>0){
 		fprintf(logfd,"%s",buffer);
 	}
 	printf("No more data\n");

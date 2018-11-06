@@ -23,7 +23,7 @@ diff -rcNP -x 'signing_key.*' -x x509.genkey -x fixdep -x objtool -x inat-tables
   EXPORT_SYMBOL(vfs_dedupe_file_range);
 + 
 + 
-+ SYSCALL_DEFINE3(read_lines_array, unsigned int, fd, char __user *, buf, size_t, count)
++ SYSCALL_DEFINE3(read_lines, unsigned int, fd, char __user *, buf, size_t, count)
 + {
 +     int read_count = 0;
 +     int single_read_count;
